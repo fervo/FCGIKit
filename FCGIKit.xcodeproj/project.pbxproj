@@ -73,6 +73,8 @@
 		F74D503512CF53FF00FD6079 /* FCGIKit_Framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCGIKit_Framework-Prefix.pch"; sourceTree = "<group>"; };
 		F74D503712CF53FF00FD6079 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F74D506112CF67D500FD6079 /* FCGIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIKit.h; path = FCGIKit.xcodeproj/FCGIKit.h; sourceTree = "<group>"; };
+		F76662C312DE3B7900D2372F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F76662C512DE3CE600D2372F /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		F7911CEC12CE40B8007CBC88 /* FCGIKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FCGIKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7911CF012CE40B9007CBC88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7911CF212CE40B9007CBC88 /* FCGIKit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FCGIKit.1; sourceTree = "<group>"; };
@@ -139,6 +141,8 @@
 		F74D502B12CF53FF00FD6079 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F76662C512DE3CE600D2372F /* README.markdown */,
+				F76662C312DE3B7900D2372F /* LICENSE */,
 				F74D503412CF53FF00FD6079 /* FCGIKit_Framework-Info.plist */,
 				F74D503612CF53FF00FD6079 /* InfoPlist.strings */,
 			);

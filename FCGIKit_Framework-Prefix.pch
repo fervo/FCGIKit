@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FCGIKit Framework' target in the 'FCGIKit Framework' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif

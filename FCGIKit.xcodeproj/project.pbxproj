@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F74D501712CE8EAD00FD6079 /* FCGIRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D501612CE8EAD00FD6079 /* FCGIRecord.m */; };
+		F74D501B12CEB49C00FD6079 /* FCGIBeginRequestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D501A12CEB49C00FD6079 /* FCGIBeginRequestRecord.m */; };
+		F74D501E12CEBFA000FD6079 /* FCGIParamsRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D501D12CEBFA000FD6079 /* FCGIParamsRecord.m */; };
+		F74D502112CF3D2E00FD6079 /* FCGIByteStreamRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D502012CF3D2E00FD6079 /* FCGIByteStreamRecord.m */; };
+		F74D502912CF49DE00FD6079 /* FCGIEndRequestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D502812CF49DE00FD6079 /* FCGIEndRequestRecord.m */; };
+		F74D503812CF53FF00FD6079 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74D503612CF53FF00FD6079 /* InfoPlist.strings */; };
+		F74D504012CF65E300FD6079 /* FCGIServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911D0E12CE5177007CBC88 /* FCGIServer.m */; };
+		F74D504112CF65E300FD6079 /* FCGIParamsRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D501D12CEBFA000FD6079 /* FCGIParamsRecord.m */; };
+		F74D504212CF65E300FD6079 /* FCGIByteStreamRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D502012CF3D2E00FD6079 /* FCGIByteStreamRecord.m */; };
+		F74D504312CF65E300FD6079 /* FCGIBeginRequestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D501A12CEB49C00FD6079 /* FCGIBeginRequestRecord.m */; };
+		F74D504412CF65E300FD6079 /* FCGIRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D501612CE8EAD00FD6079 /* FCGIRecord.m */; };
+		F74D504512CF65E300FD6079 /* FCGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911D0B12CE4EA3007CBC88 /* FCGIRequest.m */; };
+		F74D504612CF65E300FD6079 /* FCGIEndRequestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F74D502812CF49DE00FD6079 /* FCGIEndRequestRecord.m */; };
+		F74D504712CF65E300FD6079 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911CFD12CE40CA007CBC88 /* GCDAsyncSocket.m */; };
+		F74D504812CF65F700FD6079 /* FCGIServer.h in Headers */ = {isa = PBXBuildFile; fileRef = F7911D0D12CE5177007CBC88 /* FCGIServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504912CF65F700FD6079 /* FCGITypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D501812CE8FC300FD6079 /* FCGITypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504A12CF65F700FD6079 /* FCGIParamsRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D501C12CEBFA000FD6079 /* FCGIParamsRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504B12CF65F700FD6079 /* FCGIByteStreamRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D501F12CF3D2D00FD6079 /* FCGIByteStreamRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504C12CF65F700FD6079 /* FCGIBeginRequestRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D501912CEB49C00FD6079 /* FCGIBeginRequestRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504D12CF65F700FD6079 /* FCGIRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D501512CE8EAD00FD6079 /* FCGIRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504E12CF65F700FD6079 /* FCGIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F7911D0A12CE4EA3007CBC88 /* FCGIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D504F12CF65F700FD6079 /* FCGIEndRequestRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D502712CF49DE00FD6079 /* FCGIEndRequestRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D505012CF65F700FD6079 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F7911CFC12CE40CA007CBC88 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74D505112CF663400FD6079 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7911D0112CE41D8007CBC88 /* CoreServices.framework */; };
+		F74D505212CF663400FD6079 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7911CFF12CE410E007CBC88 /* Security.framework */; };
+		F74D505312CF663400FD6079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7911CF012CE40B9007CBC88 /* Foundation.framework */; };
+		F74D506212CF67D500FD6079 /* FCGIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D506112CF67D500FD6079 /* FCGIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7911CF112CE40B9007CBC88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7911CF012CE40B9007CBC88 /* Foundation.framework */; };
+		F7911CF412CE40B9007CBC88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911CF312CE40B9007CBC88 /* main.m */; };
+		F7911CFE12CE40CA007CBC88 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911CFD12CE40CA007CBC88 /* GCDAsyncSocket.m */; };
+		F7911D0012CE410E007CBC88 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7911CFF12CE410E007CBC88 /* Security.framework */; };
+		F7911D0212CE41D8007CBC88 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7911D0112CE41D8007CBC88 /* CoreServices.framework */; };
+		F7911D0C12CE4EA3007CBC88 /* FCGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911D0B12CE4EA3007CBC88 /* FCGIRequest.m */; };
+		F7911D0F12CE5177007CBC88 /* FCGIServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7911D0E12CE5177007CBC88 /* FCGIServer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7911CEA12CE40B8007CBC88 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F74D501512CE8EAD00FD6079 /* FCGIRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIRecord.h; path = ../Source/FCGIRecord.h; sourceTree = "<group>"; };
+		F74D501612CE8EAD00FD6079 /* FCGIRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIRecord.m; path = ../Source/FCGIRecord.m; sourceTree = "<group>"; };
+		F74D501812CE8FC300FD6079 /* FCGITypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGITypes.h; path = ../Source/FCGITypes.h; sourceTree = "<group>"; };
+		F74D501912CEB49C00FD6079 /* FCGIBeginRequestRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIBeginRequestRecord.h; path = ../Source/FCGIBeginRequestRecord.h; sourceTree = "<group>"; };
+		F74D501A12CEB49C00FD6079 /* FCGIBeginRequestRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIBeginRequestRecord.m; path = ../Source/FCGIBeginRequestRecord.m; sourceTree = "<group>"; };
+		F74D501C12CEBFA000FD6079 /* FCGIParamsRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIParamsRecord.h; path = ../Source/FCGIParamsRecord.h; sourceTree = "<group>"; };
+		F74D501D12CEBFA000FD6079 /* FCGIParamsRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIParamsRecord.m; path = ../Source/FCGIParamsRecord.m; sourceTree = "<group>"; };
+		F74D501F12CF3D2D00FD6079 /* FCGIByteStreamRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIByteStreamRecord.h; path = ../Source/FCGIByteStreamRecord.h; sourceTree = "<group>"; };
+		F74D502012CF3D2E00FD6079 /* FCGIByteStreamRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIByteStreamRecord.m; path = ../Source/FCGIByteStreamRecord.m; sourceTree = "<group>"; };
+		F74D502712CF49DE00FD6079 /* FCGIEndRequestRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIEndRequestRecord.h; path = ../Source/FCGIEndRequestRecord.h; sourceTree = "<group>"; };
+		F74D502812CF49DE00FD6079 /* FCGIEndRequestRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIEndRequestRecord.m; path = ../Source/FCGIEndRequestRecord.m; sourceTree = "<group>"; };
+		F74D503112CF53FF00FD6079 /* FCGIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCGIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74D503212CF53FF00FD6079 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F74D503412CF53FF00FD6079 /* FCGIKit_Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FCGIKit_Framework-Info.plist"; sourceTree = "<group>"; };
+		F74D503512CF53FF00FD6079 /* FCGIKit_Framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCGIKit_Framework-Prefix.pch"; sourceTree = "<group>"; };
+		F74D503712CF53FF00FD6079 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F74D506112CF67D500FD6079 /* FCGIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIKit.h; path = FCGIKit.xcodeproj/FCGIKit.h; sourceTree = "<group>"; };
+		F7911CEC12CE40B8007CBC88 /* FCGIKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FCGIKit; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7911CF012CE40B9007CBC88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7911CF212CE40B9007CBC88 /* FCGIKit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FCGIKit.1; sourceTree = "<group>"; };
+		F7911CF312CE40B9007CBC88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7911CF612CE40B9007CBC88 /* FCGIKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCGIKit-Prefix.pch"; sourceTree = "<group>"; };
+		F7911CFC12CE40CA007CBC88 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = ../Source/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		F7911CFD12CE40CA007CBC88 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = ../Source/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		F7911CFF12CE410E007CBC88 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		F7911D0112CE41D8007CBC88 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		F7911D0A12CE4EA3007CBC88 /* FCGIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIRequest.h; path = ../Source/FCGIRequest.h; sourceTree = "<group>"; };
+		F7911D0B12CE4EA3007CBC88 /* FCGIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIRequest.m; path = ../Source/FCGIRequest.m; sourceTree = "<group>"; };
+		F7911D0D12CE5177007CBC88 /* FCGIServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGIServer.h; path = ../Source/FCGIServer.h; sourceTree = "<group>"; };
+		F7911D0E12CE5177007CBC88 /* FCGIServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGIServer.m; path = ../Source/FCGIServer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F74D502D12CF53FF00FD6079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74D505112CF663400FD6079 /* CoreServices.framework in Frameworks */,
+				F74D505212CF663400FD6079 /* Security.framework in Frameworks */,
+				F74D505312CF663400FD6079 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7911CE912CE40B8007CBC88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7911CF112CE40B9007CBC88 /* Foundation.framework in Frameworks */,
+				F7911D0012CE410E007CBC88 /* Security.framework in Frameworks */,
+				F7911D0212CE41D8007CBC88 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F74D502A12CF53FF00FD6079 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7911D0D12CE5177007CBC88 /* FCGIServer.h */,
+				F7911D0E12CE5177007CBC88 /* FCGIServer.m */,
+				F74D501812CE8FC300FD6079 /* FCGITypes.h */,
+				F74D501C12CEBFA000FD6079 /* FCGIParamsRecord.h */,
+				F74D501D12CEBFA000FD6079 /* FCGIParamsRecord.m */,
+				F74D501F12CF3D2D00FD6079 /* FCGIByteStreamRecord.h */,
+				F74D502012CF3D2E00FD6079 /* FCGIByteStreamRecord.m */,
+				F74D501912CEB49C00FD6079 /* FCGIBeginRequestRecord.h */,
+				F74D501A12CEB49C00FD6079 /* FCGIBeginRequestRecord.m */,
+				F74D501512CE8EAD00FD6079 /* FCGIRecord.h */,
+				F74D501612CE8EAD00FD6079 /* FCGIRecord.m */,
+				F7911D0A12CE4EA3007CBC88 /* FCGIRequest.h */,
+				F7911D0B12CE4EA3007CBC88 /* FCGIRequest.m */,
+				F74D502712CF49DE00FD6079 /* FCGIEndRequestRecord.h */,
+				F74D502812CF49DE00FD6079 /* FCGIEndRequestRecord.m */,
+				F7911CFC12CE40CA007CBC88 /* GCDAsyncSocket.h */,
+				F7911CFD12CE40CA007CBC88 /* GCDAsyncSocket.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F74D502B12CF53FF00FD6079 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F74D503412CF53FF00FD6079 /* FCGIKit_Framework-Info.plist */,
+				F74D503612CF53FF00FD6079 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F7911CDF12CE40B8007CBC88 = {
+			isa = PBXGroup;
+			children = (
+				F74D506112CF67D500FD6079 /* FCGIKit.h */,
+				F74D502A12CF53FF00FD6079 /* Classes */,
+				F7911CE612CE40B8007CBC88 /* Source */,
+				F7911CE712CE40B8007CBC88 /* Documentation */,
+				F7911CED12CE40B8007CBC88 /* Products */,
+				F7911CEF12CE40B9007CBC88 /* Frameworks */,
+				F7911CF512CE40B9007CBC88 /* Other Sources */,
+				F74D502B12CF53FF00FD6079 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		F7911CE612CE40B8007CBC88 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F7911CF312CE40B9007CBC88 /* main.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F7911CE712CE40B8007CBC88 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				F7911CF212CE40B9007CBC88 /* FCGIKit.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		F7911CED12CE40B8007CBC88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7911CEC12CE40B8007CBC88 /* FCGIKit */,
+				F74D503112CF53FF00FD6079 /* FCGIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7911CEF12CE40B9007CBC88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7911D0112CE41D8007CBC88 /* CoreServices.framework */,
+				F7911CFF12CE410E007CBC88 /* Security.framework */,
+				F7911CF012CE40B9007CBC88 /* Foundation.framework */,
+				F74D503212CF53FF00FD6079 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7911CF512CE40B9007CBC88 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F7911CF612CE40B9007CBC88 /* FCGIKit-Prefix.pch */,
+				F74D503512CF53FF00FD6079 /* FCGIKit_Framework-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F74D502E12CF53FF00FD6079 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74D506212CF67D500FD6079 /* FCGIKit.h in Headers */,
+				F74D504812CF65F700FD6079 /* FCGIServer.h in Headers */,
+				F74D504912CF65F700FD6079 /* FCGITypes.h in Headers */,
+				F74D504A12CF65F700FD6079 /* FCGIParamsRecord.h in Headers */,
+				F74D504B12CF65F700FD6079 /* FCGIByteStreamRecord.h in Headers */,
+				F74D504C12CF65F700FD6079 /* FCGIBeginRequestRecord.h in Headers */,
+				F74D504D12CF65F700FD6079 /* FCGIRecord.h in Headers */,
+				F74D504E12CF65F700FD6079 /* FCGIRequest.h in Headers */,
+				F74D504F12CF65F700FD6079 /* FCGIEndRequestRecord.h in Headers */,
+				F74D505012CF65F700FD6079 /* GCDAsyncSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F74D503012CF53FF00FD6079 /* FCGIKit Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74D503B12CF53FF00FD6079 /* Build configuration list for PBXNativeTarget "FCGIKit Framework" */;
+			buildPhases = (
+				F74D502C12CF53FF00FD6079 /* Sources */,
+				F74D502D12CF53FF00FD6079 /* Frameworks */,
+				F74D502E12CF53FF00FD6079 /* Headers */,
+				F74D502F12CF53FF00FD6079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FCGIKit Framework";
+			productName = "FCGIKit Framework";
+			productReference = F74D503112CF53FF00FD6079 /* FCGIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7911CEB12CE40B8007CBC88 /* FCGIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7911CF912CE40B9007CBC88 /* Build configuration list for PBXNativeTarget "FCGIKit" */;
+			buildPhases = (
+				F7911CE812CE40B8007CBC88 /* Sources */,
+				F7911CE912CE40B8007CBC88 /* Frameworks */,
+				F7911CEA12CE40B8007CBC88 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCGIKit;
+			productName = FCGIKit;
+			productReference = F7911CEC12CE40B8007CBC88 /* FCGIKit */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7911CE112CE40B8007CBC88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "E-butik i Norden AB";
+			};
+			buildConfigurationList = F7911CE412CE40B8007CBC88 /* Build configuration list for PBXProject "FCGIKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F7911CDF12CE40B8007CBC88;
+			productRefGroup = F7911CED12CE40B8007CBC88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7911CEB12CE40B8007CBC88 /* FCGIKit */,
+				F74D503012CF53FF00FD6079 /* FCGIKit Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F74D502F12CF53FF00FD6079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74D503812CF53FF00FD6079 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F74D502C12CF53FF00FD6079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74D504012CF65E300FD6079 /* FCGIServer.m in Sources */,
+				F74D504112CF65E300FD6079 /* FCGIParamsRecord.m in Sources */,
+				F74D504212CF65E300FD6079 /* FCGIByteStreamRecord.m in Sources */,
+				F74D504312CF65E300FD6079 /* FCGIBeginRequestRecord.m in Sources */,
+				F74D504412CF65E300FD6079 /* FCGIRecord.m in Sources */,
+				F74D504512CF65E300FD6079 /* FCGIRequest.m in Sources */,
+				F74D504612CF65E300FD6079 /* FCGIEndRequestRecord.m in Sources */,
+				F74D504712CF65E300FD6079 /* GCDAsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7911CE812CE40B8007CBC88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7911CF412CE40B9007CBC88 /* main.m in Sources */,
+				F7911CFE12CE40CA007CBC88 /* GCDAsyncSocket.m in Sources */,
+				F7911D0C12CE4EA3007CBC88 /* FCGIRequest.m in Sources */,
+				F7911D0F12CE5177007CBC88 /* FCGIServer.m in Sources */,
+				F74D501712CE8EAD00FD6079 /* FCGIRecord.m in Sources */,
+				F74D501B12CEB49C00FD6079 /* FCGIBeginRequestRecord.m in Sources */,
+				F74D501E12CEBFA000FD6079 /* FCGIParamsRecord.m in Sources */,
+				F74D502112CF3D2E00FD6079 /* FCGIByteStreamRecord.m in Sources */,
+				F74D502912CF49DE00FD6079 /* FCGIEndRequestRecord.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F74D503612CF53FF00FD6079 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F74D503712CF53FF00FD6079 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F74D503912CF53FF00FD6079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F74D503A12CF53FF00FD6079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F74D503C12CF53FF00FD6079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCGIKit_Framework-Prefix.pch";
+				INFOPLIST_FILE = "FCGIKit_Framework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = FCGIKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		F74D503D12CF53FF00FD6079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCGIKit_Framework-Prefix.pch";
+				INFOPLIST_FILE = "FCGIKit_Framework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = FCGIKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		F74D503E12CF53FF00FD6079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "FCGIKit Framework";
+			};
+			name = Debug;
+		};
+		F74D503F12CF53FF00FD6079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				PRODUCT_NAME = "FCGIKit Framework";
+			};
+			name = Release;
+		};
+		F7911CF712CE40B9007CBC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F7911CF812CE40B9007CBC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F7911CFA12CE40B9007CBC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCGIKit-Prefix.pch";
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F7911CFB12CE40B9007CBC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCGIKit-Prefix.pch";
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F74D503B12CF53FF00FD6079 /* Build configuration list for PBXNativeTarget "FCGIKit Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74D503C12CF53FF00FD6079 /* Debug */,
+				F74D503D12CF53FF00FD6079 /* Release */,
+				F74D503E12CF53FF00FD6079 /* Debug */,
+				F74D503F12CF53FF00FD6079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7911CE412CE40B8007CBC88 /* Build configuration list for PBXProject "FCGIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7911CF712CE40B9007CBC88 /* Debug */,
+				F7911CF812CE40B9007CBC88 /* Release */,
+				F74D503912CF53FF00FD6079 /* Debug */,
+				F74D503A12CF53FF00FD6079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7911CF912CE40B9007CBC88 /* Build configuration list for PBXNativeTarget "FCGIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7911CFA12CE40B9007CBC88 /* Debug */,
+				F7911CFB12CE40B9007CBC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7911CE112CE40B8007CBC88 /* Project object */;
+}
